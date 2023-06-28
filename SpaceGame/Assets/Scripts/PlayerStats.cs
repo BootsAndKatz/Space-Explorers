@@ -37,5 +37,12 @@ public class PlayerStats : MonoBehaviour
             TakeDamage();
             Debug.Log("PLayer HIT!");
         }
+
+        if (other.gameObject.CompareTag("Asteroid"))
+        {
+            TakeDamage();
+            Debug.Log("PLayer HIT!");
+        }
+
     }
 }
