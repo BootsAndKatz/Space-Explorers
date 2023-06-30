@@ -43,10 +43,7 @@ public class PlayerShooting : MonoBehaviour
             canShoot = false;
             mrLaser.enabled = true;
             next = Time.time + delay;
-
         }
-
-        
     }
 
 }
