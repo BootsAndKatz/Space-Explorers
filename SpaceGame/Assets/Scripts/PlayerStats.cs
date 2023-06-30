@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
     int health = 3;
     int currentHealth;
+    public TextMeshProUGUI count;
     void Start()
     {
         currentHealth = health;
@@ -14,6 +17,7 @@ public class PlayerStats : MonoBehaviour
     void TakeDamage()
     {
         currentHealth--;
+        count.text = currentHealth.ToString();
         if(currentHealth <= 0)
         {
             Die();
