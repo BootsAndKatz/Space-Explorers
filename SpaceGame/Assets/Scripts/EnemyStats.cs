@@ -7,10 +7,12 @@ public class EnemyStats : MonoBehaviour
 {
     public int health = 100;
     int currentHealth;
+    GameObject manager;
 
 
     private void Start()
     {
+        manager = GameObject.FindGameObjectWithTag("GameManager");
         currentHealth = health;
     }
     // Update is called once per frame
@@ -32,6 +34,7 @@ public class EnemyStats : MonoBehaviour
 
     void Die()
     {
+        manager.GetComponent<ScoreScript>().AddScore(10);
         Destroy(this.gameObject);
     }
 }
