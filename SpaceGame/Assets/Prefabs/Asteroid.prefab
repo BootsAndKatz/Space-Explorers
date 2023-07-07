@@ -60,6 +60,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  damageNumberText: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1001 &1238028832371798660
 PrefabInstance:
   m_ObjectHideFlags: 0

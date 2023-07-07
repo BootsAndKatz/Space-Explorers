@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -8,7 +9,6 @@ public class EnemyStats : MonoBehaviour
     public int health = 100;
     int currentHealth;
     GameObject manager;
-
 
     private void Start()
     {
@@ -24,12 +24,12 @@ public class EnemyStats : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-
         if (currentHealth <= 0)
         {
             Die();
         }
-        Debug.Log("Enemy hit");
+
+        //Debug.Log("Enemy hit");
     }
 
     void Die()
@@ -37,4 +37,6 @@ public class EnemyStats : MonoBehaviour
         manager.GetComponent<ScoreScript>().AddScore(10);
         Destroy(this.gameObject);
     }
+
+    
 }
