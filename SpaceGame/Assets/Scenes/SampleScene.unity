@@ -313,6 +313,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4409727683831421629, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409727683831421629, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717830161539869119, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
+      propertyPath: m_Angle
+      value: -169.93483
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
 --- !u!1 &83210538
@@ -676,6 +688,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alien (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5410365755306232731, guid: 96785161bf5aa344495c2e30bcbd2e91, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5410365755306232731, guid: 96785161bf5aa344495c2e30bcbd2e91, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96785161bf5aa344495c2e30bcbd2e91, type: 3}
 --- !u!1 &193656434
@@ -764,6 +784,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alien (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5410365755306232731, guid: 96785161bf5aa344495c2e30bcbd2e91, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5410365755306232731, guid: 96785161bf5aa344495c2e30bcbd2e91, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96785161bf5aa344495c2e30bcbd2e91, type: 3}
 --- !u!1001 &231155775
@@ -821,6 +849,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4409727683831421629, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409727683831421629, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
 --- !u!1001 &264487848
@@ -877,6 +913,18 @@ PrefabInstance:
     - target: {fileID: 2603749127046078622, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
       propertyPath: m_Name
       value: Asteroid (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409727683831421629, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409727683831421629, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717830161539869119, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
+      propertyPath: m_Angle
+      value: -169.93483
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
@@ -975,7 +1023,7 @@ MonoBehaviour:
   laser: {fileID: 882511819}
   delay: 0.05
   damageNumberPrefab: {fileID: 3651289781461077182, guid: 6689b820fc4a6fd40b496447aef26b53, type: 3}
-  damageNumberOffSet: 0
+  damageNumberOffSet: 0.43
 --- !u!54 &273057449
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1059,6 +1107,18 @@ PrefabInstance:
     - target: {fileID: 2603749127046078622, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
       propertyPath: m_Name
       value: Asteroid (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409727683831421629, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409727683831421629, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717830161539869119, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
+      propertyPath: m_Angle
+      value: -10.065169
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
@@ -1941,6 +2001,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4409727683831421629, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409727683831421629, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717830161539869119, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
+      propertyPath: m_Angle
+      value: -10.065169
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
 --- !u!1 &1058331979
@@ -2074,6 +2146,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alien (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5410365755306232731, guid: 96785161bf5aa344495c2e30bcbd2e91, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5410365755306232731, guid: 96785161bf5aa344495c2e30bcbd2e91, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96785161bf5aa344495c2e30bcbd2e91, type: 3}
 --- !u!1001 &1147871621
@@ -2130,6 +2210,14 @@ PrefabInstance:
     - target: {fileID: 2886236639665369352, guid: 96785161bf5aa344495c2e30bcbd2e91, type: 3}
       propertyPath: m_Name
       value: Alien (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5410365755306232731, guid: 96785161bf5aa344495c2e30bcbd2e91, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5410365755306232731, guid: 96785161bf5aa344495c2e30bcbd2e91, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96785161bf5aa344495c2e30bcbd2e91, type: 3}
@@ -3447,6 +3535,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid
       objectReference: {fileID: 0}
+    - target: {fileID: 4409727683831421629, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409727683831421629, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717830161539869119, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
+      propertyPath: m_Angle
+      value: -10.065169
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 456de3925397f9544ad03ba692d6089d, type: 3}
 --- !u!1001 &2886236639893719902
@@ -3503,6 +3603,14 @@ PrefabInstance:
     - target: {fileID: 2886236639665369352, guid: 96785161bf5aa344495c2e30bcbd2e91, type: 3}
       propertyPath: m_Name
       value: Alien
+      objectReference: {fileID: 0}
+    - target: {fileID: 5410365755306232731, guid: 96785161bf5aa344495c2e30bcbd2e91, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5410365755306232731, guid: 96785161bf5aa344495c2e30bcbd2e91, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96785161bf5aa344495c2e30bcbd2e91, type: 3}

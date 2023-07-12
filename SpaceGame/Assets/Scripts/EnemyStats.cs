@@ -9,21 +9,19 @@ public class EnemyStats : MonoBehaviour
     public int health = 100;
     int currentHealth;
     GameObject manager;
+    public healthBar healthBar;
 
     private void Start()
     {
         manager = GameObject.FindGameObjectWithTag("GameManager");
         currentHealth = health;
-    }
-    // Update is called once per frame
-    void Update()
-    {
-
+        healthBar.SetMaxHealth(health);
     }
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
         if (currentHealth <= 0)
         {
             Die();
