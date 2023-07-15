@@ -2,27 +2,27 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    float positionOffset = 4;
 
-    //0 = left, 1 = middle, 2 = right;
+    public float moveSpeed = 20f;
+    Rigidbody rb;
 
-    int currentPos = 1;
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && currentPos > 0)
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             //Debug.Log("Move Left");
-            Vector3 leftPos = new Vector3(-positionOffset, 0, 0);
-            currentPos--;
-            transform.Translate(leftPos);
+            rb.AddForce(Vector3.left * moveSpeed * Time.deltaTime, ForceMode.VelocityChange);
         }
-        if (Input.GetKeyDown(KeyCode.RightArrow) && currentPos < 2)
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             //Debug.Log("Move Right");
-            Vector3 rightPos = new Vector3(positionOffset, 0, 0);
-            currentPos++;
-            transform.Translate(rightPos);
+            rb.AddForce(Vector3.right * moveSpeed * Time.deltaTime, ForceMode.VelocityChange);
         }
     }
 }

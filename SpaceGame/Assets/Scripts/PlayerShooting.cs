@@ -33,7 +33,7 @@ public class PlayerShooting : MonoBehaviour
             canShoot = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && canShoot)
+        if (Input.GetKeyDown(KeyCode.Space) && canShoot)
         {
             //Debug.Log("Shot!");
 
