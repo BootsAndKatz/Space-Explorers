@@ -1,14 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
-
 
 public class DamageNumber : MonoBehaviour
 {
     public float moveSpeed = 1f;
-
     public TextMeshPro damageText;
 
     private void Start()
@@ -20,7 +15,6 @@ public class DamageNumber : MonoBehaviour
     {
         // Move the damage number upwards
         transform.Translate(Vector3.up * moveSpeed * Time.deltaTime);
-
     }
 
     public void SetDamageNumber(int damage)

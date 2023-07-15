@@ -1,17 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
     float positionOffset = 4;
 
     //0 = left, 1 = middle, 2 = right;
 
     int currentPos = 1;
-
-
 
     void Update()
     {

@@ -7,9 +7,10 @@ using UnityEngine;
 public class EnemyStats : MonoBehaviour
 {
     public int health = 100;
+    public healthBar healthBar;
+
     int currentHealth;
     GameObject manager;
-    public healthBar healthBar;
 
     private void Start()
     {
@@ -30,6 +31,7 @@ public class EnemyStats : MonoBehaviour
         //Debug.Log("Enemy hit");
     }
 
+    //destroys the object this script is attacched to and adds to the score
     void Die()
     {
         manager.GetComponent<ScoreScript>().AddScore(10);

@@ -1,19 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 public class PlayerShooting : MonoBehaviour
 {
+    //in front of the player
     public Transform shootPos;
-    public int damage = 50;
     public GameObject laser;
-    MeshRenderer mrLaser;
-    float next;
-    public float delay;
-    bool canShoot = true;
     public GameObject damageNumberPrefab;
+
+    public int damage = 50;
+
+    public float delay;
     public float damageNumberOffSet;
+
+
+    MeshRenderer mrLaser;
+    // time until player can shoot agains and how long the laser is shown on screen
+    float next;
+    bool canShoot = true;
 
     void Start()
     {
@@ -23,6 +26,7 @@ public class PlayerShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //check for shooting delay and laser visibility
         if (Time.time > next)
         {
             mrLaser.enabled = false;
@@ -38,9 +42,13 @@ public class PlayerShooting : MonoBehaviour
             {
                 //Debug.Log("Raycast hit: " + hit.collider.gameObject.name);
                 //Debug.DrawLine(shootPos.position, shootPos.position + new Vector3(0, 0, 20), Color.red, 0.2f);
-                
 
+                //All enemies should have an Enemy stats script atached
+
+                if(hit.collider.GetComponent<EnemyStats>() != null)
+                {
                 hit.collider.GetComponent<EnemyStats>().TakeDamage(damage);
+                }
 
                 ShowDamageNumber(damage,hit.transform);
 
@@ -52,6 +60,7 @@ public class PlayerShooting : MonoBehaviour
         }
     }
 
+    //spawns a prefab of a number. Method takes amount of damage to be shown and the enemy transform to use their position
     public void ShowDamageNumber(int damage, Transform enemy)
     {
         Vector3 offSet = new Vector3(Random.Range(-1f, 1f), damageNumberOffSet, 0);

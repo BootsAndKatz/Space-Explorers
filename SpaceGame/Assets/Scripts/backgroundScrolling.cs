@@ -9,12 +9,14 @@ public class backgroundScrolling : MonoBehaviour
 
     private void Start()
     {
+        //material holds a contiguous texture
         mr = GetComponent<MeshRenderer>();
         mat = mr.material;
     }
 
     private void Update()
     {
+        //this makes background texture looks like its infinite scrolling
         Vector2 offset = mat.mainTextureOffset;
         offset.y += scrollSpeed * Time.deltaTime;
         mat.mainTextureOffset = offset;
