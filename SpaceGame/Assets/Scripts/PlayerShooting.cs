@@ -10,12 +10,13 @@ public class PlayerShooting : MonoBehaviour
     public int damage = 50;
 
     public float delay;
+    public float shootDelay;
     public float damageNumberOffSet;
-
 
     MeshRenderer mrLaser;
     // time until player can shoot agains and how long the laser is shown on screen
     float next;
+    float nextShoot;
     bool canShoot = true;
 
     void Start()
@@ -30,6 +31,9 @@ public class PlayerShooting : MonoBehaviour
         if (Time.time > next)
         {
             mrLaser.enabled = false;
+        }
+        if (Time.time > nextShoot)
+        {
             canShoot = true;
         }
 
@@ -57,6 +61,8 @@ public class PlayerShooting : MonoBehaviour
             canShoot = false;
             mrLaser.enabled = true;
             next = Time.time + delay;
+            nextShoot = Time.time + shootDelay;
+
         }
     }
 

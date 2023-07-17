@@ -1878,6 +1878,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8800496474789153495, guid: a149029f8d8ab064fa47418ff3d91db7, type: 3}
+      propertyPath: moveSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8800496474789153496, guid: a149029f8d8ab064fa47418ff3d91db7, type: 3}
+      propertyPath: shootDelay
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8800496474789153497, guid: a149029f8d8ab064fa47418ff3d91db7, type: 3}
+      propertyPath: m_Mass
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8800496474789153497, guid: a149029f8d8ab064fa47418ff3d91db7, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 8800496474789153498, guid: a149029f8d8ab064fa47418ff3d91db7, type: 3}
       propertyPath: count
       value: 
