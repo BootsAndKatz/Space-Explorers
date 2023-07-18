@@ -7,12 +7,14 @@ using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
-    int health = 3;
+    public int health;
     int currentHealth;
     public TextMeshProUGUI count;
     void Start()
     {
         currentHealth = health;
+        count.text = currentHealth.ToString();
+
     }
 
     void TakeDamage()
