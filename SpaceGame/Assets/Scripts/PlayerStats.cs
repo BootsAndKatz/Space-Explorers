@@ -10,11 +10,13 @@ public class PlayerStats : MonoBehaviour
     public int health;
     int currentHealth;
     public TextMeshProUGUI count;
+    GameObject gameOverOverlay;
     void Start()
     {
         currentHealth = health;
         count.text = currentHealth.ToString();
-
+        gameOverOverlay = GameObject.FindGameObjectWithTag("GameOverDisplay");
+        gameOverOverlay.SetActive(false);
     }
 
     void TakeDamage()
@@ -29,6 +31,7 @@ public class PlayerStats : MonoBehaviour
 
     void Die()
     {
+        gameOverOverlay.SetActive(true);
         Destroy(this.gameObject);
     }
 

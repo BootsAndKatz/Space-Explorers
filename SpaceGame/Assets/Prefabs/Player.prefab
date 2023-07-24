@@ -192,6 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2e3f9a8a5622e488c4e29cd5874bba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 20
 --- !u!114 &8800496474789153496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,6 +210,7 @@ MonoBehaviour:
   damageNumberPrefab: {fileID: 3651289781461077182, guid: 6689b820fc4a6fd40b496447aef26b53, type: 3}
   damage: 25
   delay: 0.05
+  shootDelay: 0
   damageNumberOffSet: 0.43
 --- !u!54 &8800496474789153497
 Rigidbody:
@@ -238,6 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9daf1816df1673e40b7de084f267762f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 3
   count: {fileID: 0}
 --- !u!1001 &8800496474265509888
 PrefabInstance:

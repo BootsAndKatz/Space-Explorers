@@ -7,6 +7,7 @@ TagManager:
   - Alien
   - Asteroid
   - GameManager
+  - GameOverDisplay
   layers:
   - Default
   - TransparentFX
